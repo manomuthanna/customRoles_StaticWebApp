@@ -42,7 +42,7 @@ jobs:
         with:
           azcliversion: 2.30.0
           inlineScript: |
-            az staticwebapp appsettings set --name "vr-staticwebapp-customAuth" --setting-names "message=Hello world"
+            az staticwebapp appsettings set --name "vr-staticwebapp-customAuth" --setting-names "message1=Hello world1" --resource-group "staticwebapps" --subscription "5aa33771-2c81-44ca-8f21-364a4ac883e6"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
