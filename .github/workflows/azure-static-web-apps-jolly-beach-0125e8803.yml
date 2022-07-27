@@ -42,7 +42,7 @@ jobs:
         with:
           azcliversion: 2.31.0
           inlineScript: |
-            az staticwebapp appsettings set --name "vr-staticwebapp-customAuth" --setting-names "${{ secrets.AZURE_AUTH_ADAPP_CLIENTID }}" "${{ secrets.AZURE_AUTH_ADAPP_CLIENTSECRET }}" --resource-group "staticwebapps" --subscription "5aa33771-2c81-44ca-8f21-364a4ac883e6"        
+            az staticwebapp appsettings set --name "teststaticwebap112" --setting-names "${{ secrets.AZURE_AUTH_ADAPP_CLIENTID }}" "${{ secrets.AZURE_AUTH_ADAPP_CLIENTSECRET }}" --resource-group "staticwebapps" --subscription "5aa33771-2c81-44ca-8f21-364a4ac883e6"        
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
